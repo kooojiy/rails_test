@@ -1,0 +1,3 @@
+class Owner < ApplicationRecord
+    validates :name, {presence: true, uniqueness: true}
+end
