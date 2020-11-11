@@ -8,9 +8,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <%#<li class="nav-item">
             <a class="nav-link" href="top.html">Home</a>
-          </li>
+          </li> %>
           <li class="nav-item">
             <a class="nav-link" href="about.html">団体を登録</a>
           </li>
@@ -27,7 +27,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>Scraping Page</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <span class="subheading">スクレイピングページ</span>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
             </a>
             <p class="post-meta">Posted by
               <a href="#"><%= event.site%></a>
-              on <%= event.date %></p>
+              , Event date <%= event.date %></p>
           </div>
           <hr>
         <% end %>
