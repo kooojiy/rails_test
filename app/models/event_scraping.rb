@@ -1,0 +1,2 @@
+class EventScraping < ApplicationRecord
+end

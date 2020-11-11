@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  owner: MyText
+  date: MyText
+  site: MyText
+  link: false
+
+two:
+  name: MyText
+  owner: MyText
+  date: MyText
+  site: MyText
+  link: false
