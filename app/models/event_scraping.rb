@@ -17,7 +17,6 @@ class EventScraping < ApplicationRecord
                 p ("主催者: #{name}")
                 p ("日時: #{date}")
                 p ('---------------------------------------')
-    
                 event = Event.new
                 event.name = title
                 event.owner = name
