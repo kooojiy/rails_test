@@ -18,6 +18,8 @@ class OwnerScraping < ApplicationRecord
                 owner.owner_id = i
                 owner.site = "e-moshicom"
                 owner.save
+                p i
+                p name
             end
         end
     end
