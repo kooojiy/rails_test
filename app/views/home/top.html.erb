@@ -52,41 +52,19 @@
             on September 24, 2019</p>
         </div>
         <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-            </h2>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
-        <hr>
         <% @events.each do |event|%>
           <div class="post-preview">
             <a href="post.html">
               <h2 class="post-title">
                 <%= event.name %>
               </h2>
+              <h3 class="post-subtitle">
+              主催者: <%= event.owner %>
+              </h3>
             </a>
-            <p class="post-meta">Organizer
-              <a href="#"><%= event.owner %></a>
-              on <%= event.date %>/ <%= event.site%>から</p>
+            <p class="post-meta">Posted by
+              <a href="#"><%= event.site%></a>
+              on <%= event.date %></p>
           </div>
           <hr>
         <% end %>
