@@ -4,6 +4,7 @@ class OwnerScraping < ApplicationRecord
     def self.scrapeFirst
         for i in 1..250000 do
             agent = Mechanize.new
+            agent.user_agent_alias = "Mac Safari"
             page = agent.get("https://moshicom.com/user/#{i}/")
         
             tx = page.search('div.progress-box span').inner_text
@@ -28,6 +29,7 @@ class OwnerScraping < ApplicationRecord
         for i in 0..170 do
             num = i*18
             agent = Mechanize.new
+            agent.user_agent_alias = "Mac Safari"
             page = agent.get("https://blueshipjapan.com/search/crew/catalog?per_page=#{num}")
             elements = page.search('h2.crew_name a')
         
