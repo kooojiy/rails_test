@@ -13,10 +13,6 @@ class EventScraping < ApplicationRecord
                 title = item.search('title').inner_text
                 name = item.search('owner name').inner_text
                 date = item.search('started_at').inner_text
-                p ("イベント名: #{title}")
-                p ("主催者: #{name}")
-                p ("日時: #{date}")
-                p ('---------------------------------------')
                 event = Event.new
                 event.name = title
                 event.owner = name
